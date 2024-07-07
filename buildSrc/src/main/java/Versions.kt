@@ -8,6 +8,6 @@ object Versions {
     const val espressoCore = "3.5.1"
     const val appCompat = "1.7.0"
     const val material = "1.12.0"
-    const val hiltAndroid = "2.51.1"
-    const val hiltCompiler = "1.2.0"
+    const val hiltVersion = "2.51.1"
+    const val hiltNavigationCompose = "1.2.0"
 }

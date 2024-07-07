@@ -68,13 +68,18 @@ dependencies {
     debugImplementation(Dependencies.composeUiTooling)
     debugImplementation(Dependencies.composeUiTestManifest)
 
-
     // Importing utilities library into the main project
     implementation(project(Modules.utilities))
 
+    // Hilt Dependencies
     implementation(Dependencies.hiltAndroid)
     kapt(Dependencies.hiltCompiler)
-    kapt(Dependencies.hiltAndroidCompiler)
+    androidTestImplementation(Dependencies.hiltAndroidTesting)
+    kaptAndroidTest(Dependencies.hiltCompiler)
+    testImplementation(Dependencies.hiltAndroidTesting)
+    kaptTest(Dependencies.hiltCompiler)
+
+    implementation(Dependencies.hiltNavigationCompose)
 }
 
 kapt {

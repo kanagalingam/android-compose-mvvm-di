@@ -13,12 +13,14 @@ object Dependencies {
     val composeUiTestJunit4 by lazy { "androidx.compose.ui:ui-test-junit4" }
     val composeUiTooling by lazy { "androidx.compose.ui:ui-tooling" }
     val composeUiTestManifest by lazy { "androidx.compose.ui:ui-test-manifest" }
-    val appCompat by lazy { "androidx.appcompat:appcompat : ${Versions.appCompat}"}
-    val material by lazy { "com.google.android.material:material : ${Versions.material}"}
+    val appCompat by lazy { "androidx.appcompat:appcompat:${Versions.appCompat}"}
+    val material by lazy { "com.google.android.material:material:${Versions.material}"}
 
-    val hiltAndroid by lazy {"com.google.dagger:hilt-android: ${Versions.hiltAndroid}"}
-    val hiltAndroidCompiler by lazy {"com.google.dagger:hilt-android-compiler: ${Versions.hiltAndroid}"}
-    val hiltCompiler by lazy {"androidx.hilt:hilt-compiler: ${Versions.hiltCompiler}"}
+    val hiltAndroid by lazy {"com.google.dagger:hilt-android:${Versions.hiltVersion}"}
+    val hiltCompiler by lazy {"com.google.dagger:hilt-compiler:${Versions.hiltVersion}"}
+    val hiltAndroidTesting by lazy {"com.google.dagger:hilt-android-testing:${Versions.hiltVersion}"}
+
+    val hiltNavigationCompose by lazy { "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}"}
 }
 
 // *** Module path - This can be seen in settings.gradle once you add a new module into the Project
