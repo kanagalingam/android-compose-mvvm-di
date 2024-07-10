@@ -1,0 +1,9 @@
+package com.mylearning.newsapp.data.datasource
+
+import com.mylearning.newsapp.data.entity.NewsResponse
+import retrofit2.Response
+import retrofit2.http.GET
+
+interface NewsDataSource {
+    suspend fun getNewsHeadline(country: String, ): Response<NewsResponse>
+}

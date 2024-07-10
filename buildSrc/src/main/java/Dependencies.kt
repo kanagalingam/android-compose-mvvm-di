@@ -13,17 +13,27 @@ object Dependencies {
     val composeUiTestJunit4 by lazy { "androidx.compose.ui:ui-test-junit4" }
     val composeUiTooling by lazy { "androidx.compose.ui:ui-tooling" }
     val composeUiTestManifest by lazy { "androidx.compose.ui:ui-test-manifest" }
-    val appCompat by lazy { "androidx.appcompat:appcompat:${Versions.appCompat}"}
-    val material by lazy { "com.google.android.material:material:${Versions.material}"}
+    val appCompat by lazy { "androidx.appcompat:appcompat:${Versions.appCompat}" }
+    val material by lazy { "com.google.android.material:material:${Versions.material}" }
 
-    val hiltAndroid by lazy {"com.google.dagger:hilt-android:${Versions.hiltVersion}"}
-    val hiltCompiler by lazy {"com.google.dagger:hilt-compiler:${Versions.hiltVersion}"}
-    val hiltAndroidTesting by lazy {"com.google.dagger:hilt-android-testing:${Versions.hiltVersion}"}
+    val hiltAndroid by lazy { "com.google.dagger:hilt-android:${Versions.hiltVersion}" }
+    val hiltCompiler by lazy { "com.google.dagger:hilt-compiler:${Versions.hiltVersion}" }
+    val hiltAndroidTesting by lazy { "com.google.dagger:hilt-android-testing:${Versions.hiltVersion}" }
 
-    val hiltNavigationCompose by lazy { "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}"}
+    val hiltNavigationCompose by lazy { "androidx.hilt:hilt-navigation-compose:${Versions.hiltNavigationCompose}" }
+
+    val retrofit by lazy { "com.squareup.retrofit2:retrofit:${Versions.retrofit}" }
+    val gson by lazy { "com.google.code.gson:gson:${Versions.gson}" }
+    val gsonConvertor by lazy { "com.squareup.retrofit2:converter-gson:${Versions.retrofit}" }
+    val moshi by lazy { "com.squareup.moshi:moshi:${Versions.moshi}" }
+    val moshiConverter by lazy { "com.squareup.retrofit2:converter-moshi:${Versions.moshiConverter}" }
+    val loggingInterceptor by lazy { "com.squareup.okhttp3:logging-interceptor:${Versions.logginInterceptor}" }
+    val coroutines by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}" }
 }
 
 // *** Module path - This can be seen in settings.gradle once you add a new module into the Project
-object Modules{
+object Modules {
     const val utilities = ":utilities"
 }
+
+//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")

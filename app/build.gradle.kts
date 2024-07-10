@@ -78,8 +78,14 @@ dependencies {
     kaptAndroidTest(Dependencies.hiltCompiler)
     testImplementation(Dependencies.hiltAndroidTesting)
     kaptTest(Dependencies.hiltCompiler)
-
     implementation(Dependencies.hiltNavigationCompose)
+
+    implementation(Dependencies.retrofit)
+    implementation(Dependencies.gson)
+    implementation(Dependencies.gsonConvertor)
+    implementation(Dependencies.moshi)
+    implementation(Dependencies.moshiConverter)
+    implementation(Dependencies.loggingInterceptor)
 }
 
 kapt {
