@@ -29,6 +29,8 @@ object Dependencies {
     val moshiConverter by lazy { "com.squareup.retrofit2:converter-moshi:${Versions.moshiConverter}" }
     val loggingInterceptor by lazy { "com.squareup.okhttp3:logging-interceptor:${Versions.logginInterceptor}" }
     val coroutines by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}" }
+
+    val splashScreen by lazy { "androidx.core:core-splashscreen:1.0.0-alpha02:${Versions.splashScreen}" }
 }
 
 // *** Module path - This can be seen in settings.gradle once you add a new module into the Project
